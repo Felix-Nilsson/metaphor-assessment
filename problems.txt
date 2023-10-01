@@ -1,0 +1,20 @@
+
+Problem 1: Same track may have been uploaded several times, so picking
+the most similar each time may lead to duplicates.
+Solution: Pick a response with lower similarity score, and hope 
+the song does not have too many duplicates.
+In a real application we could filter the results in a smarter way
+(also could get stuck in loop: most relevant of a is b and
+ vice versa
+
+
+Problem 2: The application is wasteful, since only a small fraction
+of the spent tokens will be used in constructing the result
+
+Problem 3: Different domains have different querying speeds,
+for example, youtube is much faster than soundcloud or bandcamp
+(probably is a more popular source)
+
+Problem 4: Long inputs sometimes seem to yield no results, 
+making the starting point URL get an indexation error. 
+E.g. try entering "smells like teen spirit"
